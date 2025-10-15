@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Company Classifier</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    pre { background: #f4f4f4; padding: 1rem; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <h1>🏦 Insurance Company Classifier</h1>
+  <p>Upload your company list and insurance taxonomy CSV files:</p>
+  <input type="file" id="companies" accept=".csv">
+  <input type="file" id="taxonomy" accept=".csv">
+  <button id="classify">Classify</button>
+
+  <h2>Results</h2>
+  <pre id="output"></pre>
+
+  <script src="classify_insurance_browser.js"></script>
+</body>
+</html>
